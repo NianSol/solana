@@ -89,7 +89,7 @@ static_assertions = { workspace = true }
 rustc_version = { workspace = true }
 
 [target.'cfg(any(unix, windows))'.build-dependencies]
-cc = { workspace = true, features = ["parallel"] }
+cc = { workspace = true, features = ["jobserver", "parallel"] }
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]
